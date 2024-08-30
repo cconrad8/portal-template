@@ -80,6 +80,24 @@ const routes: GenericRoute[] = [
         path: "Contributors",
         hideRouteFromNavbar: false,
       },
+      {
+        exact: true,
+        hideRouteFromNavbar: false,
+        path: 'Form Submission',
+        synapseConfigArray: [
+          {
+            name: 'SynapseFormWrapper',
+            props: {
+              formSchemaEntityId: 'syn62709712',
+              fileNamePath: 'observations.resourceName',
+              formUiSchemaEntityId: 'syn62709713',
+              formNavSchemaEntityId: 'syn62709745',
+              formTitle: 'Your Submission',
+              formClass: 'tool-submission',
+            },
+          },
+        ],
+      },
     ],
   },
 ];
